@@ -1,0 +1,94 @@
+<div class="map-container"
+     style="display: grid;
+     grid-template-rows: auto auto auto;
+     ">
+
+  <section class="map-section">
+    <div id="map"></div>
+  </section>
+
+  <section class="service-section">
+    <div class="tiles">
+      <article class="tile line-chart">
+        <!--        <tt-line-chart></tt-line-chart>-->
+        <ng-container [style]="data?.location ? 'display:none' : ''">
+          <!--          <app-market-chart [marketStatus]="bitcoinsToPlot"></app-market-chart>-->
+          <tt-radar-chart [radarStatus]="radarsToPlot"></tt-radar-chart>
+        </ng-container>
+      </article>
+
+      <div class="toogle-container" *ngIf="toogle"
+           style="display: flex; align-items: center"
+           (click)="toogle=!toogle">
+        <mat-icon style="font-size: 30px; height: 30px; width: 30px">info</mat-icon>
+        <h3>
+          <span>{{'dashboard.info' | translate}}</span>
+        </h3>
+      </div>
+
+      <article class="tile-info" [style.display]="toogle ? 'none' : ''">
+
+        <div class="tile-header">
+          <mat-icon>info</mat-icon>
+          <h3>
+            <span>{{'dashboard.info' | translate}}</span>
+          </h3>
+        </div>
+
+        <div class="tile-details">
+          <div class="device-details">
+            <div>
+              <span>{{'dashboard.coordinate-location' | translate}}: </span>
+              <span>{{data?.coords.latitude}} - {{data?.coords.longitude}}</span>
+            </div>
+          </div>
+
+          <div class="device-details">
+            <div>
+              <span>{{'dashboard.sensor-name' | translate}}: </span>
+              <span>{{data?.name}}</span>
+            </div>
+          </div>
+
+          <div class="device-details">
+            <div>
+              <span>{{'dashboard.group' | translate}}: </span>
+              <span>{{data?.location}}</span>
+            </div>
+          </div>
+
+          <div class="device-details">
+            <div class="sensor-status">
+              <span>{{'dashboard.sensor-status' | translate}}: </span>
+              <span *ngIf="data?.status">
+                <mat-icon>check_circle_outline</mat-icon>
+              </span>
+              <span *ngIf="!data?.status">
+                <mat-icon>error_outline</mat-icon>
+              </span>
+
+              <div style="right: 0; position: absolute; cursor: pointer"
+                   (click)="toogle=!toogle">
+                <mat-icon>keyboard_double_arrow_down</mat-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+  </section>
+</div>
+
+<!--<div class="map-container">-->
+<!--  <div class="map-frame">-->
+<!--    <div id="map" style="height: 200px"></div>-->
+<!--    <div id="info" style="height: 200px">-->
+<!--      {{data?.name}}-->
+<!--    </div>-->
+
+<!--    <div id="chart">-->
+<!--      <tt-line-chart></tt-line-chart>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

@@ -1,0 +1,62 @@
+<div class="example-box" cdkDrag
+     style="align-items: center">
+
+  <section class="service-section">
+    <div class="tiles">
+      <article class="tile line-chart">
+        <!--        <tt-line-chart></tt-line-chart>-->
+        <ng-container [style]="data?.location ? 'display:none' : ''">
+          <!--          <app-market-chart [marketStatus]="bitcoinsToPlot"></app-market-chart>-->
+          <tt-radar-chart [radarStatus]="radarsToPlot"></tt-radar-chart>
+        </ng-container>
+      </article>
+
+      <article class="tile-info">
+
+        <div class="tile-header">
+<!--          <mat-icon>info</mat-icon>-->
+          <h3>
+            <span>{{'dashboard.info' | translate}}</span>
+          </h3>
+          <mat-icon (click)="onClickClose()" style="font-size: 30px; height: 30px; width: 30px">close</mat-icon>
+        </div>
+
+        <div class="tile-details">
+          <div class="device-details">
+            <div>
+              <span>{{'dashboard.coordinate-location' | translate}}: </span>
+              <span>{{data?.coords.latitude}} - {{data?.coords.longitude}}</span>
+            </div>
+          </div>
+
+          <div class="device-details">
+            <div>
+              <span>{{'dashboard.sensor-name' | translate}}: </span>
+              <span>{{data?.name}}</span>
+            </div>
+          </div>
+
+          <div class="device-details">
+            <div>
+              <span>{{'dashboard.group' | translate}}: </span>
+              <span>{{data?.location}}</span>
+            </div>
+          </div>
+
+          <div class="device-details">
+            <div class="sensor-status">
+              <span>{{'dashboard.sensor-status' | translate}}: </span>
+              <span *ngIf="data?.status">
+                <mat-icon>check_circle_outline</mat-icon>
+              </span>
+              <span *ngIf="!data?.status">
+                <mat-icon>error_outline</mat-icon>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,36 @@
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 5px 15px;
+  overflow: hidden;
+}
+
+#map {
+  //height: 100%;
+  //min-width: 50%;
+  border-radius: 5px;
+}
+
+
+.container {
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.resizeable {
+  //min-height: 450px;
+  min-height: 50px;
+  border: 1px solid #aaa;
+  padding: 10px;
+  resize: vertical;
+  overflow: hidden;
+}
+
+.content {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+

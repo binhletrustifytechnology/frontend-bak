@@ -1,0 +1,38 @@
+<mat-toolbar color="primary" class="sticky-toolbar">
+  <button mat-icon-button class="btn-sidenav-menu" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <img [src]="logo" aria-label="logo" class="tt-logo-title"/>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened="true">
+    <mat-list class="nav" *ngFor="let section of menuSection$ | async">
+      <a
+        mat-list-item
+        class="hover"
+        style="display: flex"
+        routerLink="{{ section.path }}"
+      >
+        <mat-icon
+          mat-list-icon
+          [matTooltip]="!isExpanded ? section.name : null"
+          matTooltipPosition="right"
+        >
+          {{ section.icon }}
+        </mat-icon>
+
+        <span matLine style="vertical-align: top; line-height: 25px">{{ section.name | translate }}</span>
+      </a>
+    </mat-list>
+  </mat-sidenav>
+
+    <mat-sidenav-content class="tt-sidenav-container" [style.min-height.px]="elementHeight">
+    <div fxLayout="column" role="main" style="height: 100%;">
+      <div fxFlex fxLayout="column" tt-toast class="tt-main-content">
+        <router-outlet (activate)="activeComponentChanged($event)"></router-outlet>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,59 @@
+<div class="map-container">
+<!--  <div id="map"-->
+<!--       mwlResizable-->
+<!--       [enableGhostResize]="true"-->
+<!--       (resizeEnd)="onResizeEnd($event)"-->
+<!--  >-->
+<!--  </div>-->
+
+  <div class="text-center">
+    <div
+      id="map"
+      class="rectangle"
+      [ngStyle]="mapStyle"
+      mwlResizable
+      [validateResize]="validate"
+      [enableGhostResize]="true"
+      [resizeSnapGrid]="{ left: 50, right: 50 }"
+      (resizeEnd)="onResizeEnd($event)"
+    >
+      <div
+        class="resize-handle-top"
+        mwlResizeHandle
+        [resizeEdges]="{ top: true }"
+      ></div>
+      <div
+        class="resize-handle-left"
+        mwlResizeHandle
+        [resizeEdges]="{ left: true }"
+      ></div>
+      <div
+        class="resize-handle-right"
+        mwlResizeHandle
+        [resizeEdges]="{ right: true }"
+      ></div>
+      <div
+        class="resize-handle-bottom"
+        mwlResizeHandle
+        [resizeEdges]="{ bottom: true }"
+      ></div>
+    </div>
+  </div>
+
+  <app-drag-drop
+    class="info-container"
+    [style.top.px]="alignTop"
+    [toggle]="toggle"
+    [data]="data"
+    [radarsToPlot]="radarsToPlot"
+  ></app-drag-drop>
+
+  <div class="toogle-container"
+       (click)="onClickInfo()">
+    <mat-icon style="font-size: 30px; height: 30px; width: 30px">info</mat-icon>
+    <h3>
+<!--      <span>{{'dashboard.info' | translate}}</span>-->
+    </h3>
+<!--    {{toggle}}-->
+  </div>
+</div>

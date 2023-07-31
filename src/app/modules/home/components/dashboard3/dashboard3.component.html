@@ -1,0 +1,28 @@
+<div class="map-container">
+  <div
+    #resizeContainer
+    appResize
+    (widthChange)="onHeightChange($event)"
+    class="resizeable">
+    <div id="map" [ngStyle]="mapStyle"></div>
+  </div>
+
+  <!--  <div class="content">Content of div b &#45;&#45; {{mapStyle?.height}}</div>-->
+
+  <app-drag-drop
+    *ngIf="toggle"
+    class="info-container"
+    [style.top.px]="alignTop"
+    [toggle]="toggle"
+    [data]="data"
+    [radarsToPlot]="radarsToPlot"
+    (toggleEvent)="toggleEvent($event)"
+  ></app-drag-drop>
+
+
+<!--  <div class="toogle-container"-->
+<!--       (click)="onClickInfo()">-->
+<!--    <mat-icon style="font-size: 30px; height: 30px; width: 30px">close</mat-icon>-->
+<!--  </div>-->
+</div>
+

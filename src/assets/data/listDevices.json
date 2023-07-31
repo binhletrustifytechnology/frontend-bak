@@ -1,0 +1,64 @@
+{
+  "customer": {
+    "customer_id": "435",
+    "device": [
+      {
+        "id": "223527",
+        "name": "5015501 Pasteur - Camera",
+        "slcDeviceAddress": "182486",
+        "location": "17166",
+        "coords": {
+          "latitude": "10.776338577271",
+          "longitude": "106.70006561279"
+        }
+      },
+      {
+        "id": "223528",
+        "name": "5015377 Ly Tu Trong - Camera",
+        "slcDeviceAddress": "182526",
+        "location": "17166",
+        "coords": {
+          "latitude": "10.777093887329",
+          "longitude": "106.70024108887"
+        }
+      },
+      {
+        "id": "224633",
+        "name": "5007266 Node",
+        "slcDeviceAddress": "175486",
+        "location": "17166",
+        "coords": {
+          "latitude": "10.77679129080339",
+          "longitude": "106.69999486749822"
+        }
+      },
+      {
+        "id": "225060",
+        "name": "5014805 Ly Tu Trong - Lamp",
+        "slcDeviceAddress": "182500",
+        "location": "17166",
+        "coords": {
+          "latitude": "10.776534080505",
+          "longitude": "106.69973754883"
+        }
+      },
+      {
+        "id": "225068",
+        "name": "5015415 Pasteur - Lamp",
+        "slcDeviceAddress": "182524",
+        "location": "17166",
+        "coords": {
+          "latitude": "10.777049358074482",
+          "longitude": "106.69974165696364"
+        }
+      },
+      {
+        "id": "226735",
+        "name": "5004170 Node",
+        "slcDeviceAddress": "172541",
+        "location": "17166",
+        "coords": {}
+      }
+    ]
+  }
+}

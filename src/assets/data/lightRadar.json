@@ -1,0 +1,280 @@
+{
+  "lightRadar": {
+    "@attributes": {
+      "serial": "5015377",
+      "customer": "435"
+    },
+    "dataset": [
+      {
+        "@attributes": {
+          "date": "2023-07-10 03:59:05"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3546539"
+          },
+          "truck": "68487",
+          "car": "3351498",
+          "motorbike": "16032",
+          "bicycle": "419",
+          "person": "109838",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148651"
+          },
+          "truck": "29260",
+          "car": "84307",
+          "motorbike": "10465",
+          "bicycle": "479",
+          "person": "23894",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 03:40:31"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3546385"
+          },
+          "truck": "68481",
+          "car": "3351356",
+          "motorbike": "16032",
+          "bicycle": "419",
+          "person": "109832",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148651"
+          },
+          "truck": "29260",
+          "car": "84307",
+          "motorbike": "10465",
+          "bicycle": "479",
+          "person": "23894",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 03:18:51"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3546202"
+          },
+          "truck": "68476",
+          "car": "3351184",
+          "motorbike": "16031",
+          "bicycle": "419",
+          "person": "109827",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148645"
+          },
+          "truck": "29260",
+          "car": "84303",
+          "motorbike": "10464",
+          "bicycle": "479",
+          "person": "23893",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 03:02:19"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3546046"
+          },
+          "truck": "68472",
+          "car": "3351039",
+          "motorbike": "16029",
+          "bicycle": "419",
+          "person": "109822",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148641"
+          },
+          "truck": "29260",
+          "car": "84302",
+          "motorbike": "10463",
+          "bicycle": "479",
+          "person": "23891",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 02:46:22"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3545906"
+          },
+          "truck": "68472",
+          "car": "3350903",
+          "motorbike": "16029",
+          "bicycle": "419",
+          "person": "109818",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148641"
+          },
+          "truck": "29260",
+          "car": "84302",
+          "motorbike": "10463",
+          "bicycle": "479",
+          "person": "23891",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 02:30:45"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3545761"
+          },
+          "truck": "68471",
+          "car": "3350764",
+          "motorbike": "16028",
+          "bicycle": "419",
+          "person": "109814",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148639"
+          },
+          "truck": "29260",
+          "car": "84302",
+          "motorbike": "10463",
+          "bicycle": "479",
+          "person": "23889",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 02:15:28"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3545581"
+          },
+          "truck": "68468",
+          "car": "3350590",
+          "motorbike": "16027",
+          "bicycle": "419",
+          "person": "109812",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148636"
+          },
+          "truck": "29260",
+          "car": "84302",
+          "motorbike": "10462",
+          "bicycle": "479",
+          "person": "23887",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 01:59:40"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3545420"
+          },
+          "truck": "68467",
+          "car": "3350432",
+          "motorbike": "16027",
+          "bicycle": "419",
+          "person": "109810",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148630"
+          },
+          "truck": "29260",
+          "car": "84299",
+          "motorbike": "10462",
+          "bicycle": "479",
+          "person": "23884",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 01:44:11"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3545282"
+          },
+          "truck": "68466",
+          "car": "3350302",
+          "motorbike": "16025",
+          "bicycle": "419",
+          "person": "109805",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148625"
+          },
+          "truck": "29260",
+          "car": "84298",
+          "motorbike": "10460",
+          "bicycle": "479",
+          "person": "23882",
+          "unknown": "246"
+        }
+      },
+      {
+        "@attributes": {
+          "date": "2023-07-10 01:28:27"
+        },
+        "approaching": {
+          "@attributes": {
+            "total": "3545154"
+          },
+          "truck": "68466",
+          "car": "3350182",
+          "motorbike": "16025",
+          "bicycle": "419",
+          "person": "109797",
+          "unknown": "265"
+        },
+        "receding": {
+          "@attributes": {
+            "total": "148623"
+          },
+          "truck": "29260",
+          "car": "84297",
+          "motorbike": "10460",
+          "bicycle": "479",
+          "person": "23881",
+          "unknown": "246"
+        }
+      }
+    ]
+  }
+}
